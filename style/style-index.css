@@ -1,53 +1,109 @@
-html {
-  font-family: 'Roboto', sans-serif;
-  color: #d5d6eb;
-}
-
 body {
-  background-color: #0c0d2e;
+  padding: 0;
+  margin: 0;
+  background-color: #d5d6eb;
 }
 
 section {
-  width: 75%;
-  margin: 10% auto;
-}
-
-h1 {
-  font-family: Averta, sans-serif;
-  font-size: 75px;
+  display: inline-block;
   margin: 0;
 }
 
-.content {
-  font-size: 25px;
-  width: 65%;
-  margin-bottom: 35px;
-  line-height: 1.5;
-}
-
-.anchor {
-  text-decoration: none;
-  border-bottom: 1px #65f0ed dotted;
-  color: #65f0ed;
-}
-
-.anchor:hover {
+#left-panel {
   color: #d5d6eb;
-  border-bottom: 1px #d5d6eb dotted;
+  background-color: #17252a;
+  height: 100%;
+  width: 15%;
+  position: fixed;
 }
 
-ul {
-  padding: 0;
+#right-panel {
+  width: 85%;
+  color: #17252a;
+  float: right;
+}
+
+#left-panel h1 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+#left-panel img {
+  margin: 0 20%;
+  border-radius: 2px;
+  border: 1px solid #d5d6eb;
+}
+
+#left-panel p {
+  margin-top: 25px;
+  margin-left: 10px;
+  font-size: 15px;
+  margin-bottom: 35px;
 }
 
 li {
-  display: inline-block;
-  font-size: 40px;
-  width: 50px;
-  padding: 0 auto;
+  list-style: none;
+  font-size: 15px;
+  margin: 25px 0;
+}
+
+a {
+  text-decoration: none;
   color: #d5d6eb;
 }
 
-.icon:hover {
-  color: #65f0ed
+a:hover {
+  color: #65f0ed;
+}
+
+#left-panel footer {
+  position: absolute;
+  bottom: 0;
+}
+
+#left-panel footer p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+#right-panel h1 {
+  font-size: 50px;
+  padding-left: 15px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.post {
+  margin-left: 15px;
+  margin-right: 30%;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.post:hover {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.post h3 {
+  font-size: 35px;
+  margin: 0;
+}
+
+.post a {
+  color: inherit;
+}
+
+.post a:hover {
+  color: black;
+}
+
+.date {
+  margin: 5px 0;
+  color: black;
+}
+
+.short-details {
+  font-size: 20px;
 }

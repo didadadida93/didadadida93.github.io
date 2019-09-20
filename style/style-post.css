@@ -1,0 +1,39 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  color: #d5d6eb;
+}
+
+body {
+  background-color: #17252a;
+}
+
+section {
+  width: 75%;
+  margin: 10% auto;
+}
+
+h1 {
+  font-family: Averta, sans-serif;
+  font-size: 75px;
+  margin: 0;
+}
+
+.content {
+  font-size: 25px;
+  width: 65%;
+  margin-bottom: 35px;
+  line-height: 1.5;
+}
+
+.back-icon {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #d5d6eb;
+}
+
+a:hover {
+  color: #65f0ed;
+}
