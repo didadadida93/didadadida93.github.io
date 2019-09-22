@@ -2,6 +2,11 @@ body {
   padding: 0;
   margin: 0;
   background-color: #d5d6eb;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 section {
@@ -89,6 +94,7 @@ a:hover {
 .post h3 {
   font-size: 35px;
   margin: 0;
+  font-family: 'Inconsolata', sans-serif;
 }
 
 .post a {
@@ -102,6 +108,7 @@ a:hover {
 .date {
   margin: 5px 0;
   color: black;
+  font-family: serif;
 }
 
 .short-details {
