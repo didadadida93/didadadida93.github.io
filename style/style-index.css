@@ -114,3 +114,18 @@ a:hover {
 .short-details {
   font-size: 20px;
 }
+
+button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+button:hover {
+  color: black;
+}

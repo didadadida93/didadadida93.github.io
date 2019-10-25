@@ -1,0 +1,58 @@
+.posting {
+  display: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.posting h1 {
+  margin-bottom: 0;
+}
+
+.posting .post {
+  border-radius: 3px;
+  padding: 0;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.posting .post span {
+  padding-left: 10px;
+}
+
+.posting .post .content {
+  padding: 15px 5px 5px 10px;
+  font-size: 20px;
+}
+
+.posting .post .content:hover {
+  color: black;
+}
+
+.posting .post img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 2px 12px 2px rgba(0, 0, 0, 0.2), 0 12px 20px 2px rgba(0, 0, 0, 0.19);
+}
+
+code {
+  color: #65f0ed;
+  background-color: #17252a;
+  font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+}
+
+.code-block {
+  margin-left: 15px;
+  padding: 1px 5px 1px 10px;
+  background-color: #d5d6eb;
+  border-radius: 2px;
+  color: #17252a;
+  width: 50%;
+  font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+  font-size: 15px;
+}
+
+.comment {
+  color: #eba844;
+}
+
+.posting .post a:hover {
+  color: black;
+}

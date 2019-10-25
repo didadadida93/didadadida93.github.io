@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta description="All content that I love and care">
-    <title>Didadadida93 - Github Page</title>
+    <title>didadadida93 | Github Page</title>
 
     <link href="style/style-index.css" rel="stylesheet" type="text/css">
+    <link href="style/style-posting.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- left panel -->
     <section id="left-panel">
       <div class="left-content">
         <h1>didadadida93</h1>
@@ -17,52 +19,225 @@
         <ul>
           <li><span class="fas fa-map-marker-alt"></span> Indonesia</li>
           <a href="https://github.com/didadadida93" target="_blank"><li><span class="fab fa-github"></span> Github</li></a>
-          <a href="#"><li><span class="fas fa-code-branch"></span> Project</li></a>
+          <a href="#project"><li><span class="fas fa-code-branch"></span> Project</li></a>
           <a href="mailto:didadadida93@gmail.com"><li><span class="fas fa-envelope"></span> Email</li></a>
         </ul>
         <footer>
-          <p>Created @ 2019</p>
+          <p></p>
         </footer>
       </div>
     </section>
+
+    <!-- right panel -->
     <section id="right-panel">
-      <h1>My Post!</h1>
+      <div class="right-panel-content">
+        <h1>My Post!</h1>
 
-      <article class="post">
-        <h3><a href="pages/array.html">Array</a></h3>
-        <p class="date">6 October 2019</p>
-        <p class="short-details">Packing a lot of item into singe variable &#x1F4E6;</p>
-        <p><a href="pages/array.html">Read more ...</a></p>
-      </article>
+        <article class="post">
+          <h3><a href="#array">Array</a></h3>
+          <p class="date">6 October 2019</p>
+          <p class="short-details">Packing a lot of item into singe variable &#x1F4E6;</p>
+          <p><a href="#array">Read more ...</a></p>
+        </article>
 
-      <article class="post">
-        <h3><a href="pages/conditional.html">Conditional</a></h3>
-        <p class="date">29 September 2019</p>
-        <p class="short-details">Looking for something? &#x1F914;</p>
-        <p><a href="pages/conditional.html">Read more ...</a></p>
-      </article>
+        <article class="post">
+          <h3><a href="#conditional">Conditional</a></h3>
+          <p class="date">29 September 2019</p>
+          <p class="short-details">Looking for something? &#x1F914;</p>
+          <p><a href="#conditional">Read more ...</a></p>
+        </article>
 
-      <article class="post">
-        <h3><a href="pages/loop-de-loop.html">Loop de Loop</a></h3>
-        <p class="date">28 September 2019</p>
-        <p class="short-details">Repeat same task over and over? Loops come to the rescue &#x1F468;&#x200D;&#x1F692;</p>
-        <p><a href="pages/loop-de-loop.html">Read more ...</a></p>
-      </article>
+        <article class="post">
+          <h3><a href="#loop-de-loop">Loop de Loop</a></h3>
+          <p class="date">28 September 2019</p>
+          <p class="short-details">Repeat same task over and over? Loops come to the rescue &#x1F468;&#x200D;&#x1F692;</p>
+          <p><a href="#loop-de-loop">Read more ...</a></p>
+        </article>
 
-      <article class="post">
-        <h3><a href="pages/move-to-new-place.html">Move On!</a></h3>
-        <p class="date">22 September 2019</p>
-        <p class="short-details">Moving <strong>ON!</strong>&#x1F525;</p>
-        <p><a href="pages/move-to-new-place.html">Read more ...</a></p>
-      </article>
+        <article class="post">
+          <h3><a href="#move-on">Move On!</a></h3>
+          <p class="date">22 September 2019</p>
+          <p class="short-details">Moving <strong>ON!</strong>&#x1F525;</p>
+          <p><a href="#move-on">Read more ...</a></p>
+        </article>
 
-      <article class="post">
-        <h3><a href="pages/hello-world.html">Hello, World!</a></h3>
-        <p class="date">20 September 2019</p>
-        <p class="short-details">This is my first post on this site.</p>
-        <p><a href="pages/hello-world.html">Read more ...</a></p>
-      </article>
+        <article class="post">
+          <h3><a href="#hello-world">Hello, World!</a></h3>
+          <p class="date">20 September 2019</p>
+          <p class="short-details">This is my first post on this site.</p>
+          <p><a href="#hello-world">Read more ...</a></p>
+        </article>
+      </div>
+
+      <!-- posting section -->
+      <div id="project" style="display:none;">
+        <h1>Project</h1>
+
+        <article class="post">
+          <h3><a href="https://github.com/didadadida93/tkpy" target="_blank">tkpy</a></h3>
+          <p class="short-details">This is my first project based on my hobby playing Travian Kingdom.</p>
+          <p><a href="https://github.com/didadadida93/tkpy" target="_blank">Read more ...</a></p>
+        </article>
+
+        <article class="post">
+          <h3><a href="https://github.com/didadadida93/t5apy" target="_blank">t5apy</a></h3>
+          <p class="short-details">Request map data to Travian Kingdom public API made it easy.</p>
+          <p><a href="https://github.com/didadadida93/t5apy" target="_blank">Read more ...</a></p>
+        </article>
+
+        <button target="project" style="margin-left:15px;"><span class="fas fa-angle-double-left"></span>Back</button>
+      </div>
+
+      <section class="posting" id="conditional">
+        <h1>Conditional</h1>
+        <section class="post">
+          <img src="img/conditional.jpg"/>
+          <span><em>image source: hackernoon.com</em></span>
+          <div class="content">
+            <p>
+              The <code>if</code> statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed.
+            </p>
+            <p>
+              The operator that frequently used as a shortcut for the <code>if</code> statement is the <strong>conditional (ternary) operator</strong>.<br>
+              This operator only takes three operands.
+            </p>
+          </div>
+          <div class="code-block">
+            <p><span class="comment">// example of ternary operator</span></p>
+            <p>
+              let foo = true
+            </p>
+            <p>
+              let bar = foo ? 'foo' : 'bar'
+            </p>
+          </div>
+          <button target="conditional"><span class="fas fa-angle-double-left"></span>Back</button>
+        </section>
+      </section>
+
+      <section class="posting" id="array">
+        <h1>Array</h1>
+        <section class="post">
+          <img src="img/array.jpg"/>
+          <span><em>image source: homedit.com</em></span>
+          <div class="content">
+            <p>
+              Instead declare a lot of variable, you can store that item into a singel variable, on an <code>Array</code>.
+            </p>
+            <p>
+              <code>Array</code> in JavaScript can be <em>nonhomogeneous</em>, meaning the elements in an <code>Array</code> do not need to be the same type (it follows from this that arrays can have other arrays as elements).
+            </p>
+            <p>
+              <code>Array</code> containing another <code>Array</code> usually called as multidimension arrays.
+            </p>
+            <div class="code-block">
+              <p>
+                let foo = [1, 2, 3, 4, 5] <span class="comment">// array contain number</span>
+              </p>
+              <p>
+                let bar = [[1, 2, 3], [4, 5, 6]] <span class="comment">// array contain array</span>
+              </p>
+            </div>
+          </div>
+          <button target="array"><span class="fas fa-angle-double-left"></span>Back</button>
+        </section>
+      </section>
+
+      <section class="posting" id="hello-world">
+        <h1>Hello, World!</h1>
+        <section class="post">
+          <img src="img/first_post.jpg"/>
+          <span><em>image source: pamspier19.com</em></span>
+          <div class="content">
+            <p>
+              The name is Arief Rohman, and this is my first line of code,
+              print a message: <code>"Hello, World!"</code>
+            </p>
+          </div>
+          <button target="hello-world"><span class="fas fa-angle-double-left"></span>Back</button>
+        </section>
+      </section>
+
+      <section class="posting" id="loop-de-loop">
+        <h1>Loop de Loop</h1>
+        <section class="post">
+          <img src="img/looping.jpg"/>
+          <span><em>image source: yoyofactory-europe.com</em></span>
+          <div class="content">
+            <p>
+              Loops offer a quick and easy way to do something repeatedly.
+            </p>
+            <p>
+              There are many different kinds of loops, but they all essentially do the same thing: <br>they repeat an action some number of times (and it's actually possible that number could be zero).
+            </p>
+            <p>
+              The statements for loops provided in JavaScript are:
+              <ul>
+                <li><code>for</code> statement</li>
+                <div class="code-block">
+                  <p>
+                    for (let i = 0; i < 5; i++) {
+                  </p>
+                  <p style="padding-left: 15px;">
+                    console.log(i)
+                  </p>
+                  <p>}</p>
+                </div>
+                <li><code>while</code> statement</li>
+                <div class="code-block">
+                  <p> let i = 0 </p>
+                  <p>
+                    while (i < 5) {
+                  </p>
+                  <p style="padding-left: 15px;">
+                    console.log(i)
+                  </p>
+                  <p style="padding-left: 15px;">
+                    i++
+                  </p>
+                  <p>}</p>
+                </div>
+                <li><code>do...while</code> statement</li>
+                <div class="code-block">
+                  <p> let i = 0 </p>
+                  <p>
+                    do {
+                  </p>
+                  <p style="padding-left: 15px;">
+                    console.log(i)
+                  </p>
+                  <p style="padding-left: 15px;">
+                    i++
+                  </p>
+                  <p>} while (i < 5)</p>
+                </div>
+              </ul>
+            </p>
+          </div>
+          <button target="loop-de-loop"><span class="fas fa-angle-double-left"></span>Back</button>
+        </section>
+      </section>
+
+      <section class="posting" id="move-on">
+        <h1>Moving On!</h1>
+        <section class="post">
+          <img src="img/move_on.jpg"/>
+          <span><em>image source: miriadna.com</em></span>
+          <div class="content">
+            <p>
+              Yesterday afternoon, I've move to a new place &#127881;
+            </p>
+            <p>
+              Now I didn't need to go through a <em>traffic jam hell</em> &#x1F601; every morning.
+            </p>
+          </div>
+          <button target="move-on"><span class="fas fa-angle-double-left"></span>Back</button>
+        </section>
+      </section>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d6a0c20a7b.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
