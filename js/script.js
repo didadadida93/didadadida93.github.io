@@ -1,5 +1,3 @@
-let main = true
-
 $(document).ready(() => {
 
   let date = new Date()
@@ -52,12 +50,20 @@ $(document).ready(() => {
     if ($(e.currentTarget.attributes.target.value).is(":visible")) {
       $(e.currentTarget.attributes.target.value).fadeOut(300, () => {
         $(".right-panel-content").fadeIn(300)
-        $("#right-panel .right-panel-content h1")[0].scrollIntoView()
+        if ($(`#post-${e.currentTarget.attributes.target.value.slice(1)}`).length === 0) {
+          $("#right-panel .right-panel-content h1")[0].scrollIntoView()
+        } else {
+          $(`#post-${e.currentTarget.attributes.target.value.slice(1)}`)[0].scrollIntoView()
+        }
       })
     } else {
       // this element already disappear
       $(".right-panel-content").fadeIn(300)
-      $("#right-panel .right-panel-content h1")[0].scrollIntoView()
+      if ($(`#post-${e.currentTarget.attributes.target.value.slice(1)}`).length === 0) {
+        $("#right-panel .right-panel-content h1")[0].scrollIntoView()
+      } else {
+        $(`#post-${e.currentTarget.attributes.target.value.slice(1)}`)[0].scrollIntoView()
+      }
     }
   })
 })
