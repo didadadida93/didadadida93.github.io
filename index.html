@@ -33,6 +33,13 @@
       <div class="right-panel-content">
         <h1>My Post!</h1>
 
+        <article class="post" id="post-recursive">
+          <h3><a href="#recursive">Recursive</a></h3>
+          <p class="date">19 October 2019</p>
+          <p class="short-details">Function that calling himself &#x1F4AB;</p>
+          <p><a href="#recursive">Read more ...</a></p>
+        </article>
+
         <article class="post" id="post-object">
           <h3><a href="#object">Object Literal</a></h3>
           <p class="date">12 October 2019</p>
@@ -94,6 +101,25 @@
 
         <button target="#project" style="margin-left:15px;"><span class="fas fa-angle-double-left"></span>Back</button>
       </div>
+
+      <section class="posting" id="recursive">
+        <h1>Recursive</h1>
+        <section class="post">
+          <img src="img/recursive.jpg"/>
+          <span><em>image source: comsol.com</em></span>
+          <div class="content">
+            <p>Recursion occurs when a function calls itself directly or indirectly.</p>
+            <p>The classic example of recursive programming involves computing factorials. The factorial of a number is computed as that number times all of the numbers below it up to and including 1.</p>
+            <div class="code-block">
+              <p>function factorial (n) {</p>
+              <p style="padding-left:15px;">if (n === 1) return n</p>
+              <p style="padding-left:15px">return n * factorial(n - 1)</p>
+              <p>}</p>
+            </div>
+          </div>
+          <button target="#recursive"><span class="fas fa-angle-double-left"></span>Back</button>
+        </section>
+      </section>
 
       <section class="posting" id="object">
         <h1>Object Literal</h1>
