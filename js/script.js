@@ -1,3 +1,5 @@
+let main = true
+
 $(document).ready(() => {
 
   let date = new Date()
@@ -10,24 +12,48 @@ $(document).ready(() => {
       e.currentTarget.attributes.href.value !== "https://github.com/didadadida93/tkpy" &&
       e.currentTarget.attributes.href.value !== "https://github.com/didadadida93/t5apy"
     ) {
-      // $.when($(".right-panel-content").fadeToggle(300)).done(() => {
-      //   $(e.currentTarget.attributes.href.value).fadeToggle(300)
-      // })
-      if ($(e.currentTarget.attributes.href.value).is(":visible")) {
-        $.when($(e.currentTarget.attributes.href.value).fadeToggle(300)).done(() => {
-          $(".right-panel-content").fadeToggle(300)
-        })
+      if (e.currentTarget.attributes.href.value === '#project') {
+        if ($(".right-panel-content").is(":visible")) {
+          $(".right-panel-content").fadeOut(300, () => {
+            $("#project").fadeIn(300)
+          })
+        } else {
+          let section = [...$("section")]
+            .filter(section => section.className === "posting")
+            .filter(section => $(`#${section.id}`).is(":visible"))
+
+          $(`#${section[0].id}`).fadeOut(300, () => {
+            $("#project").fadeIn(300)
+          })
+        }
       } else {
-        $.when($(".right-panel-content").fadeToggle(300)).done(() => {
-          $(e.currentTarget.attributes.href.value).fadeToggle(300)
+        $(".right-panel-content").fadeOut(300, () => {
+          $(e.currentTarget.attributes.href.value).fadeIn(300)
         })
       }
     }
   })
 
   $("button").on("click", e => {
-    $.when($(`#${e.currentTarget.attributes.target.value}`).fadeToggle(300)).done(() => {
-      $(".right-panel-content").fadeToggle(300)
+    // button always clean all unnecessary element and show ".right-panel-content"
+    // so it is like reset button
+
+    // first check all section and make it disappear
+    let sections = [...$("section")].filter(section => section.className === "posting")
+    // sections = sections.filter(section => section.className === "posting")
+    sections = [...sections, ...$("#project")]
+    sections.forEach(section => {
+      if ($(`#${section.id}`).is(":visible")) $(`#${section.id}`).fadeOut(300)
     })
+
+    // then check where this button got clicked and make it disappear
+    if ($(`#${e.currentTarget.attributes.target.value}`).is(":visible")) {
+      $(`#${e.currentTarget.attributes.target.value}`).fadeOut(300, () => {
+        $(".right-panel-content").fadeIn(300)
+      })
+    } else {
+      // this element already disappear
+      $(".right-panel-content").fadeIn(300)
+    }
   })
 })
