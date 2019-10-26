@@ -36,34 +36,13 @@ $(document).ready(() => {
   })
 
   $("button").on("click", e => {
-    // button always clean all unnecessary element and show ".right-panel-content"
-    // so it is like reset button
-
-    // first check all section and make it disappear
-    let sections = [...$("section")].filter(section => section.className === "posting")
-    sections = [...sections, ...$("#project")]
-    sections.forEach(section => {
-      if ($(`#${section.id}`).is(":visible")) $(`#${section.id}`).fadeOut(300)
-    })
-
-    // then check where this button got clicked and make it disappear
-    if ($(e.currentTarget.attributes.target.value).is(":visible")) {
-      $(e.currentTarget.attributes.target.value).fadeOut(300, () => {
-        $(".right-panel-content").fadeIn(300)
-        if ($(`#post-${e.currentTarget.attributes.target.value.slice(1)}`).length === 0) {
-          $("#right-panel .right-panel-content h1")[0].scrollIntoView()
-        } else {
-          $(`#post-${e.currentTarget.attributes.target.value.slice(1)}`)[0].scrollIntoView()
-        }
-      })
-    } else {
-      // this element already disappear
+    $(e.currentTarget.attributes.target.value).fadeOut(300, () => {
       $(".right-panel-content").fadeIn(300)
       if ($(`#post-${e.currentTarget.attributes.target.value.slice(1)}`).length === 0) {
         $("#right-panel .right-panel-content h1")[0].scrollIntoView()
       } else {
         $(`#post-${e.currentTarget.attributes.target.value.slice(1)}`)[0].scrollIntoView()
       }
-    }
+    })
   })
 })
